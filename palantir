@@ -1,0 +1,465 @@
+# ============================================================================
+# Palantir + Palantir-partnered media blocklist
+# Compiled 2026-08-10. Every domain verified via registrar/WHOIS records,
+# nameserver fingerprints, certificate-transparency logs, official company
+# brand pages, live HTTP checks, or company documentation. No guessed entries.
+#
+# Format: one registered domain per line. Use with a wildcard-capable blocker
+# (Pi-hole regex/wildcard, NextDNS denylist, AdGuard Home) so subdomains are
+# covered — a plain hosts file CANNOT cover Palantir's per-customer instance
+# hostnames or CDN subdomains.
+#
+# Partnership basis (verified):
+# - Axel Springer: Palantir Foundry customer, documented since Oct 2022;
+#   owns The Telegraph since June 30, 2026.
+# - Fox News Media: Palantir-built AI newsroom tools, announced Nov 18, 2025.
+# - USA TODAY Co. (formerly Gannett): Palantir AI platform on first-party
+#   reader data, announced Aug 6, 2026.
+# - Thomson Reuters: NO current direct Palantir contract (2010 deal defunct;
+#   indirect data flow via shared ICE customer reported by 404 Media, Mar
+#   2026). Kept in an optional section — remove if that fails your bar.
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# PALANTIR TECHNOLOGIES — corporate & public-facing
+# (covers www/docs/blog/community/learn/status subdomains via wildcard)
+# ----------------------------------------------------------------------------
+palantir.com
+palantir.tech
+palantir.build
+palantir.io
+palantir.fr
+palantir.co.uk
+palantir.ai
+palantir.us
+palantirtechnologies.com
+palantirusg.com
+
+# PALANTIR — product/cloud hosting (customer instances live on subdomains:
+# <customer>.palantirfoundry.com, <env>.palantircloud.com, <env>.palantirapollo.com,
+# government workloads on *.palantirgov.com — wildcard rules required)
+palantirfoundry.com
+palantirfoundry.co.uk
+palantirfoundry.de
+palantirfoundry.com.au
+palantircloud.com
+palantircloud.co.uk
+palantirapollo.com
+palantirgov.com
+
+# PALANTIR — registered by Palantir, currently unused (future-proofing)
+palantirfoundry.ca
+palantirfoundry.eu
+palantirgov.us
+palantirapollo.co.uk
+
+# ----------------------------------------------------------------------------
+# USA TODAY CO., INC. (formerly Gannett; renamed Nov 18, 2025, NYSE: TDAY)
+# Official publication list: https://www.usatodayco.com/local-brands-map/
+# ----------------------------------------------------------------------------
+usatodayco.com
+usatoday.com
+gannett.com
+gannett-cdn.com
+studiogci.com
+southernkitchen.com
+usatodaystore.com
+10best.com
+
+# USA TODAY Network — 46 largest local papers (each individually HTTP-verified;
+# all serve from the same first-party USA TODAY Network infrastructure)
+azcentral.com
+freep.com
+tennessean.com
+courier-journal.com
+indystar.com
+jsonline.com
+dispatch.com
+cincinnati.com
+detroitnews.com
+desmoinesregister.com
+democratandchronicle.com
+northjersey.com
+app.com
+delawareonline.com
+commercialappeal.com
+knoxnews.com
+clarionledger.com
+oklahoman.com
+statesmanjournal.com
+argusleader.com
+tallahassee.com
+floridatoday.com
+palmbeachpost.com
+news-press.com
+jacksonville.com
+naplesnews.com
+greenvilleonline.com
+citizen-times.com
+fayobserver.com
+beaconjournal.com
+cantonrep.com
+lohud.com
+providencejournal.com
+telegram.com
+coloradoan.com
+rgj.com
+burlingtonfreepress.com
+lansingstatejournal.com
+postcrescent.com
+greenbaypressgazette.com
+elpasotimes.com
+caller.com
+courierpress.com
+heraldtribune.com
+montgomeryadvertiser.com
+shreveporttimes.com
+
+# USA TODAY Network — remaining local papers, sourced from the company's own
+# official local-brands map (authoritative brand list; not individually curled)
+gadsdentimes.com
+tuscaloosanews.com
+swtimes.com
+desertsun.com
+thecalifornian.com
+visaliatimesdelta.com
+redding.com
+vcstar.com
+recordnet.com
+vvdailypress.com
+chieftain.com
+norwichbulletin.com
+staugustine.com
+palmbeachdailynews.com
+newschief.com
+theledger.com
+dailycommercial.com
+gainesville.com
+ocala.com
+news-journalonline.com
+newsherald.com
+nwfdailynews.com
+pnj.com
+tcpalm.com
+augustachronicle.com
+onlineathens.com
+savannahnow.com
+sj-r.com
+lincolncourier.com
+cantondailyledger.com
+galesburg.com
+mcdonoughvoice.com
+starcourier.com
+pontiacdailyleader.com
+pekintimes.com
+pjstar.com
+rrstar.com
+journalstandard.com
+heraldtimesonline.com
+tmnews.com
+reporter-times.com
+southbendtribune.com
+jconline.com
+pal-item.com
+thestarpress.com
+amestrib.com
+press-citizen.com
+salina.com
+hutchnews.com
+cjonline.com
+thegleaner.com
+houmatoday.com
+dailycomet.com
+thetowntalk.com
+thenewsstar.com
+theadvertiser.com
+dailyworld.com
+delmarvanow.com
+heraldmailmedia.com
+milforddailynews.com
+metrowestdailynews.com
+enterprisenews.com
+patriotledger.com
+heraldnews.com
+tauntongazette.com
+capecodtimes.com
+southcoasttoday.com
+thegardnernews.com
+hillsdale.net
+hollandsentinel.com
+thedailyreporter.com
+lenconnect.com
+sturgisjournal.com
+sooeveningnews.com
+cheboygannews.com
+petoskeynews.com
+monroenews.com
+battlecreekenquirer.com
+livingstondaily.com
+thetimesherald.com
+sctimes.com
+hattiesburgamerican.com
+columbiatribune.com
+news-leader.com
+greatfallstribune.com
+fosters.com
+seacoastonline.com
+njherald.com
+burlingtoncountytimes.com
+courierpostonline.com
+thedailyjournal.com
+mycentraljersey.com
+dailyrecord.com
+lcsun-news.com
+recordonline.com
+mpnnow.com
+the-leader.com
+eveningtribune.com
+timestelegram.com
+uticaod.com
+pressconnects.com
+stargazette.com
+ithacajournal.com
+poughkeepsiejournal.com
+blueridgenow.com
+starnewsonline.com
+gastongazette.com
+shelbystar.com
+indeonline.com
+timesreporter.com
+the-daily-record.com
+record-courier.com
+times-gazette.com
+the-review.com
+daily-jeff.com
+marionstar.com
+bucyrustelegraphforum.com
+thenews-messenger.com
+portclintonnewsherald.com
+lancastereaglegazette.com
+chillicothegazette.com
+newarkadvocate.com
+mansfieldnewsjournal.com
+zanesvilletimesrecorder.com
+coshoctontribune.com
+examiner-enterprise.com
+registerguard.com
+poconorecord.com
+buckscountycouriertimes.com
+theintell.com
+ellwoodcityledger.com
+timesonline.com
+dailyamerican.com
+therecordherald.com
+tricountyindependent.com
+goerie.com
+ydr.com
+publicopiniononline.com
+eveningsun.com
+ldnews.com
+newportri.com
+goupstate.com
+independentmail.com
+aberdeennews.com
+thepublicopinion.com
+oakridger.com
+columbiadailyherald.com
+theleafchronicle.com
+dnj.com
+jacksonsun.com
+amarillo.com
+reporternews.com
+gosanangelo.com
+timesrecordnews.com
+lubbockonline.com
+thespectrum.com
+progress-index.com
+newsleader.com
+kitsapsun.com
+fdlreporter.com
+htrnews.com
+thenorthwestern.com
+sheboyganpress.com
+wausaudailyherald.com
+wisconsinrapidstribune.com
+marshfieldnewsherald.com
+stevenspointjournal.com
+
+# ----------------------------------------------------------------------------
+# AXEL SPRINGER SE
+# Official portfolio: https://www.axelspringer.com/en/brands
+# ----------------------------------------------------------------------------
+axelspringer.com
+bild.de
+welt.de
+autobild.de
+computerbild.de
+bz-berlin.de
+businessinsider.de
+n24.de
+n24doku.de
+welt.tv
+bild.tv
+bildplus.de
+politico.com
+politico.eu
+politicopro.com
+eenews.net
+businessinsider.com
+insider.com
+telegraph.co.uk
+emarketer.com
+insiderintelligence.com
+bisnow.com
+upday.com
+transfermarkt.de
+toralarm.com
+morningbrewinc.com
+morningbrew.com
+techbrew.com
+marketingbrew.com
+retailbrew.com
+hr-brew.com
+cfobrew.com
+itbrew.com
+healthcare-brew.com
+brewmarkets.com
+afterearnings.com
+idealo.de
+idealo.co.uk
+idealo.fr
+idealo.it
+idealo.es
+idealo.at
+awin.com
+awin1.com
+shareasale.com
+bonial.com
+bonial.de
+bonial.fr
+kaufda.de
+meinprospekt.de
+
+# AXEL SPRINGER — Ringier Axel Springer Polska (50/50 joint venture; remove
+# this block if half-ownership fails your bar)
+onet.pl
+fakt.pl
+newsweek.pl
+forbes.pl
+businessinsider.com.pl
+komputerswiat.pl
+auto-swiat.pl
+noizz.pl
+plejada.pl
+ofeminin.pl
+medonet.pl
+skapiec.pl
+opineo.pl
+ringpublishing.com
+ringieraxelspringer.pl
+
+# ----------------------------------------------------------------------------
+# FOX NEWS MEDIA — the entity with the verified Palantir deal
+# (foxnews.com wildcard also covers a57/static/assets/vod asset hosts and
+# nation.foxnews.com; outkick.com now redirects into Fox News Digital)
+# ----------------------------------------------------------------------------
+foxnews.com
+foxbusiness.com
+foxweather.com
+foxnation.com
+outkick.com
+foxnews.net
+foxnewsgo.com
+foxnewsradio.com
+foxnewspodcasts.com
+
+# FOX CORPORATION — parent company and sister brands. No Palantir deal
+# confirmed at the parent level; remove this block if you only want the
+# partner entity.
+foxcorporation.com
+fox.com
+foxsports.com
+fssta.com
+foxdeportes.com
+foxsoul.tv
+tmz.com
+toofab.com
+credible.com
+redseatventures.com
+bentoboxent.com
+marvistaentertainment.com
+studioramsay.com
+foxcareers.com
+foxadvertising.com
+tubitv.com
+tubi.tv
+tubi.com
+adrise.tv
+tubi.io
+foxone.com
+foxentertainment.com
+foxsportsgo.com
+foxtvstations.com
+fox.tv
+livenow.fox
+
+# FOX — owned-and-operated local TV stations (all 18 domains HTTP-verified,
+# "FOX Television Stations" confirmed in live page HTML)
+fox10phoenix.com
+foxla.com
+ktvu.com
+fox5dc.com
+fox35orlando.com
+wogx.com
+fox13news.com
+fox5atlanta.com
+fox32chicago.com
+fox2detroit.com
+fox9.com
+fox5ny.com
+fox29.com
+fox7austin.com
+fox4news.com
+fox26houston.com
+fox13seattle.com
+fox6now.com
+q13fox.com
+
+# ----------------------------------------------------------------------------
+# OPTIONAL: THOMSON REUTERS — no current direct Palantir contract verified.
+# Only link: defunct 2010 QA Studio deal + 404 Media (Mar 2026) reporting that
+# TR's CLEAR data feeds ICE, with indications it reaches the Palantir system
+# ICE uses. Delete this block if indirect-via-ICE fails your bar.
+# (CLEAR itself is clear.thomsonreuters.com — covered by the wildcard.
+#  reutersmedia.net serves only on subdomains, e.g. static.reutersmedia.net.)
+# ----------------------------------------------------------------------------
+thomsonreuters.com
+tr.com
+thomsonreuters.co.uk
+thomsonreuters.ca
+thomsonreuters.com.au
+thomsonreuters.de
+thomsonreuters.com.br
+thomsonreuters.in
+thomsonreuters.jp
+thomsonreuters.es
+thomsonreuters.cn
+thomsonreuters.nl
+reuters.com
+reutersagency.com
+reutersconnect.com
+reutersevents.com
+reutersmedia.net
+tmsnrt.rs
+westlaw.com
+westlaw.co.uk
+highq.com
+casetext.com
+legalcurrent.com
+serengetilaw.com
+riacheckpoint.com
+sureprep.com
+pagero.com
+safesend.com
+confirmation.com
+ponderasolutions.com
